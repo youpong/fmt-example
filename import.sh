@@ -1,13 +1,15 @@
+#!/bin/bash
+
 src="../fmt"
 
-# mkdir fmt
+# include files
 for h in fmt/core.h   \
-          fmt/format.h \
-          fmt/format-inl.h
+         fmt/format.h \
+         fmt/format-inl.h
 do
-    dir=${h#/*}
-    install -c -m 644 -D ${src}/include/$h $dir
+    dir="${h#/*}"
+    install -c -m 644 -D "${src}/include/$h" "$dir"
 done
 
-
-install -c -m 644 -D ${src}/src/format.cc .
+# source files
+install -c -m 644 -D "${src}/src/format.cc" .
