@@ -3,9 +3,13 @@
 This is an example of the {fmt} library. Added headers and sources from the 
 librarie's Git repostory to this project.
 
+## Dependencies
+
+* cmake 3.22 or later
+
 ## How to build
 
-```
+```bash
 $ ./import.sh
 $ cmake -Bbuild
 $ cmake --build build
