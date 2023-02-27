@@ -6,6 +6,7 @@ librarie's Git repostory to this project.
 ## How to build
 
 ```
+$ ./import.sh
 $ cmake -Bbuild
 $ cmake --build build
 ```

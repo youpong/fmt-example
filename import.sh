@@ -1,6 +1,11 @@
 #!/bin/bash
 
-src="../fmt"
+archive_url="https://github.com/fmtlib/fmt/releases/download/9.1.0/fmt-9.1.0.zip"
+filename="${archive_url##*/}"
+src="${filename%.zip}"
+
+curl -sSLO "$archive_url"
+unzip -q "$filename"
 
 # include files
 for h in fmt/core.h   \
