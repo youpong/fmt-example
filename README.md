@@ -6,6 +6,8 @@ librarie's Git repostory to this project.
 ## Dependencies
 
 * cmake 3.22 or later
+* curl
+* zip
 
 ## How to build
 
